@@ -6,6 +6,7 @@ import Users from './pages/users/Users';
 import Products from './pages/products/Products';
 import Orders from './pages/orders/Orders';
 import Profile from './pages/profile/Profile';
+import Login from './pages/login/Login';
 import Logout from './pages/logout/Logout';
 
 function App() {
@@ -27,6 +28,8 @@ function App() {
               <Route path="perfil" index element={<Profile />} />
               <Route path="sair" element={<Logout />} />
             </Route>
+
+            <Route path="login" element={<Login />} />
 
           </Route>
         </Routes>
