@@ -1,27 +1,32 @@
-$border-color: #f2f2f2;
-$main-color: #3d6dc7;
-$title-color: #999999;
-$text-color: #3f3f3f;
+@use '../variables.scss' as v;
 
 .sidebar {
-    height: 100%;
     flex: 1;
-    border-right: 1px solid $border-color;
+    border-right: 1px solid v.$border-color;
+    background: v.$background-white;
 
     .logo {
-        color: $main-color;
-        font-weight: 700;
-        font-size: 2rem;
+        border-bottom: 1px solid v.$border-color;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .wrapper {
+            color: v.$main-color;
+            font-weight: 700;
+            font-size: 2rem;
+        }
     }
 
     .title {
         text-transform: uppercase;
-        color: $title-color;
+        color: v.$title-color;
         font-size: 0.8rem;
     }
 
     .link {
         text-decoration: none;
-        color: $text-color;
+        color: v.$text-color;
     }
 }

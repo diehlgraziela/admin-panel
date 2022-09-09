@@ -1,4 +1,7 @@
 //components
+import Container from '../../components/container/Container';
+import PageContainer from '../../components/container/PageContainer';
+import Content from '../../components/container/Content';
 import Sidebar from '../../components/sidebar/Sidebar';
 import Navbar from '../../components/navbar/Navbar';
 
@@ -6,14 +9,17 @@ import './orders.scss';
 
 const Orders = () => {
     return (
-        <div className="orders">
+        <Container>
             <Sidebar />
 
-            <div className="ordersContainer">
+            <PageContainer>
                 <Navbar />
-                <h1>Pedidos</h1>
-            </div>
-        </div>
+
+                <Content>
+                    <h1>Pedidos</h1>
+                </Content>
+            </PageContainer>
+        </Container>
     );
 }
 

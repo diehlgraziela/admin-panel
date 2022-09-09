@@ -5,6 +5,8 @@ import Home from './pages/home/Home';
 import Users from './pages/users/Users';
 import Products from './pages/products/Products';
 import Orders from './pages/orders/Orders';
+import Profile from './pages/profile/Profile';
+import Logout from './pages/logout/Logout';
 
 function App() {
   return (
@@ -19,6 +21,11 @@ function App() {
               <Route path="usuarios" index element={<Users />} />
               <Route path="produtos" element={<Products />} />
               <Route path="pedidos" element={<Orders />} />
+            </Route>
+
+            <Route path="usuario">
+              <Route path="perfil" index element={<Profile />} />
+              <Route path="sair" element={<Logout />} />
             </Route>
 
           </Route>

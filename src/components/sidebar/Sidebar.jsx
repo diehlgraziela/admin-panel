@@ -6,7 +6,9 @@ const Sidebar = () => {
     return (
         <div className="sidebar">
             <div className="logo">
-                Dashboard
+                <div className="wrapper">
+                    Dashboard
+                </div>
             </div>
 
             <ul>
@@ -24,6 +26,14 @@ const Sidebar = () => {
                 </Link>
                 <Link to="/listas/produtos" className="link">
                     <li>Produtos</li>
+                </Link>
+
+                <p className="title">Usuário</p>
+                <Link to="/usuario/perfil" className="link">
+                    <li>Meu Perfil</li>
+                </Link>
+                <Link to="/usuario/sair" className="link">
+                    <li>Sair</li>
                 </Link>
             </ul>
         </div>

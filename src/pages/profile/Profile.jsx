@@ -5,22 +5,24 @@ import Content from '../../components/container/Content';
 import Sidebar from '../../components/sidebar/Sidebar';
 import Navbar from '../../components/navbar/Navbar';
 
-import './home.scss';
+import './profile.scss';
 
-const Home = () => {
+const Profile = () => {
     return (
         <Container>
             <Sidebar />
 
             <PageContainer>
+
                 <Navbar />
 
                 <Content>
-                    <h1>Home</h1>
+                    <h1>Meu perfil</h1>
                 </Content>
+
             </PageContainer>
         </Container>
     );
 }
 
-export default Home;
+export default Profile;
