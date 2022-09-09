@@ -1,8 +1,27 @@
+$border-color: #f2f2f2;
+$main-color: #3d6dc7;
+$title-color: #999999;
+$text-color: #3f3f3f;
+
 .sidebar {
-    background: #ffcdcd;
+    height: 100%;
     flex: 1;
+    border-right: 1px solid $border-color;
+
+    .logo {
+        color: $main-color;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    .title {
+        text-transform: uppercase;
+        color: $title-color;
+        font-size: 0.8rem;
+    }
 
     .link {
         text-decoration: none;
+        color: $text-color;
     }
 }

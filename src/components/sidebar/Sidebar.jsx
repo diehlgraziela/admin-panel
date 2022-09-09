@@ -5,13 +5,17 @@ import './sidebar.scss';
 const Sidebar = () => {
     return (
         <div className="sidebar">
+            <div className="logo">
+                Dashboard
+            </div>
+
             <ul>
-                <p>Menu</p>
+                <p className="title">Menu</p>
                 <Link to="/" className="link">
                     <li>Dashboard</li>
                 </Link>
 
-                <p>Listas</p>
+                <p className="title">Listas</p>
                 <Link to="/listas/usuarios" className="link">
                     <li>Usuários</li>
                 </Link>
