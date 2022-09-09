@@ -4,3 +4,12 @@ $background-white: #ffffff;
 $main-color: #3d6dc7;
 $title-color: #999999;
 $text-color: #4b4b4b;
+
+$hover-transition: 0.2s ease-in-out;
+
+@mixin display-flex($justify, $align, $gap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
