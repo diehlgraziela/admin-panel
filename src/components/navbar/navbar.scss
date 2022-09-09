@@ -4,8 +4,35 @@
     background: v.$background-white;
     border-bottom: 1px solid v.$border-color;
     height: 70px;
+    width: 100%;
 
-    display: flex;
-    align-items: center;
-    padding: 0 1rem;
+    @include v.display-flex(space-between, center, 0);
+    padding: 0 2rem;
+
+    .search-bar {
+        @include v.display-flex(0, 0, 0);
+        position: relative;
+        width: 50%;
+    }
+
+    .search-bar .search-button {
+        background: none;
+        border: none;
+        position: absolute;
+        right: 0;
+        top: 6px;
+        color: v.$title-color;
+        padding: 0 0.3rem;
+        cursor: pointer;
+
+        @include v.display-flex(0, center, 0);
+    }
+
+    .options {
+        @include v.display-flex(0, center, 1rem);
+    }
+
+    .icon {
+        color: v.$text-color;
+    }
 }

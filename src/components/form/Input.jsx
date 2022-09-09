@@ -1,3 +1,5 @@
+import './input.scss';
+
 const Input = ({ type, placeholder }) => {
     return (
         <input type={type} placeholder={placeholder} />
