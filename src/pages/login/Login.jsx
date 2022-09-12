@@ -1,8 +1,12 @@
+import Container from '../../components/container/Container';
+
 import '../../components/variables.scss';
 
 const Login = () => {
     return (
-        <h1>Login</h1>
+        <Container>
+            <h1>Login</h1>
+        </Container>
     );
 }
 
