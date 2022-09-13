@@ -1,4 +1,4 @@
-import './input.scss';
+import './form.scss';
 
 const Input = ({ type, placeholder }) => {
     return (

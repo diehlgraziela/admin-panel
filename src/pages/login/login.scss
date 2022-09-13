@@ -1,0 +1,5 @@
+@use '../../components/variables.scss' as v;
+
+.login-container {
+    @include v.display-flex(center, center, 0);
+}
