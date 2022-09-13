@@ -18,7 +18,6 @@ const Home = () => {
 
                 <Content>
                     <HomeAreaChart />
-                    <HomeAreaChart />
                 </Content>
             </PageContainer>
         </Container>
