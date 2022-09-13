@@ -1,0 +1,27 @@
+@use '../variables.scss' as v;
+
+.card {
+    @include v.display-flex(center, 0, 10px);
+    flex-direction: column;
+    background: v.$background-white;
+    box-shadow: v.$box-shadow;
+    padding: 1rem;
+
+    .title {
+        color: v.$title-color;
+    }
+
+    .number {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .percentage {
+        font-size: 0.8rem;
+
+        span {
+            color: #75baff;
+            letter-spacing: 1px;
+        }
+    }
+}

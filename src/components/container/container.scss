@@ -1,5 +1,7 @@
+@use '../variables.scss' as v;
+
 .container {
-    display: flex;
+    @include v.display-flex(0, 0, 0);
 }
 
 .pageContainer {
@@ -8,4 +10,6 @@
 
 .content {
     padding: 1rem 1rem;
+    @include v.display-flex(0, 0, 1rem);
+    flex-direction: column;
 }

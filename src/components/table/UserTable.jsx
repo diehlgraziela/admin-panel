@@ -32,7 +32,6 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
 }));
 
 const StyledTableContainer = styled(TableContainer)(({ theme }) => ({
-    marginTop: "1rem",
     overflow: "auto",
 }));
 
