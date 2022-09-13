@@ -25,7 +25,6 @@ function App() {
 
             <Route path="usuario">
               <Route path="perfil" index element={<Profile />} />
-              <Route path="login" element={<Login />} />
             </Route>
 
             <Route path="login" element={<Login />} />

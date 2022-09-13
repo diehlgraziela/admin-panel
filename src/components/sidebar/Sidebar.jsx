@@ -44,7 +44,7 @@ const Sidebar = () => {
                     <PersonIcon className="icon" />
                     <li>Meu Perfil</li>
                 </Link>
-                <Link to="/usuario/login" className="link">
+                <Link to="/login" className="link">
                     <LogoutIcon className="icon" />
                     <li>Sair</li>
                 </Link>
