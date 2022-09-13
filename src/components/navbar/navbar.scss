@@ -1,6 +1,9 @@
 @use '../variables.scss' as v;
 
 .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
     background: v.$background-white;
     border-bottom: 1px solid v.$border-color;
     height: 70px;
