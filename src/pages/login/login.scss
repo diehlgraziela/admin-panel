@@ -1,5 +1,42 @@
 @use '../../components/variables.scss' as v;
 
 .login-container {
-    @include v.display-flex(center, center, 0);
+    @include v.display-flex(center, center, 1rem);
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+
+    .form-container {
+        border: 1px solid v.$border-color;
+        background: v.$background-white;
+        width: 400px;
+        padding: 1rem 2rem;
+        text-align: center;
+
+        p {
+            font-size: 13px;
+            margin-top: 0.5rem;
+        }
+
+        .link {
+            text-decoration: none;
+            color: v.$main-color;
+            transition: v.$hover-transition;
+        }
+    }
+
+    .form {
+        @include v.display-flex(center, center, 1rem);
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .form .form-controller {
+        @include v.display-flex(center, center, 0.5rem);
+        width: 100%;
+    }
+
+    .form button {
+        width: 100%;
+    }
 }

@@ -7,7 +7,6 @@ import Products from './pages/products/Products';
 import Orders from './pages/orders/Orders';
 import Profile from './pages/profile/Profile';
 import Login from './pages/login/Login';
-import Logout from './pages/logout/Logout';
 
 function App() {
   return (
@@ -26,7 +25,7 @@ function App() {
 
             <Route path="usuario">
               <Route path="perfil" index element={<Profile />} />
-              <Route path="sair" element={<Logout />} />
+              <Route path="login" element={<Login />} />
             </Route>
 
             <Route path="login" element={<Login />} />

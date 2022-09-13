@@ -1,8 +1,18 @@
 @use '../variables.scss' as v;
 
-input {
+form input {
     border: 1px solid v.$border-color;
     padding: 0.5rem;
     flex: 1;
     outline-color: rgba(93, 142, 233, 0.3);
+}
+
+form button {
+    width: 100;
+    padding: 0.5rem;
+    cursor: pointer;
+    background: v.$main-color;
+    color: v.$background-white;
+    font-size: 1rem;
+    border: none;
 }
