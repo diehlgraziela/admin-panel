@@ -4,6 +4,7 @@ import PageContainer from '../../components/container/PageContainer';
 import Content from '../../components/container/Content';
 import Sidebar from '../../components/sidebar/Sidebar';
 import Navbar from '../../components/navbar/Navbar';
+import HomeAreaChart from '../../components/chart/HomeAreaChart';
 
 import './home.scss';
 
@@ -16,7 +17,7 @@ const Home = () => {
                 <Navbar />
 
                 <Content>
-                    <h1>Home</h1>
+                    <HomeAreaChart />
                 </Content>
             </PageContainer>
         </Container>
