@@ -6,6 +6,7 @@ import GroupIcon from '@mui/icons-material/Group';
 import PaymentIcon from '@mui/icons-material/Payment';
 import InventoryIcon from '@mui/icons-material/Inventory';
 import LogoutIcon from '@mui/icons-material/Logout';
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 
 import './sidebar.scss';
 
@@ -37,6 +38,12 @@ const Sidebar = () => {
                 <Link to="/listas/produtos" className="link">
                     <InventoryIcon className="icon" />
                     <li>Produtos</li>
+                </Link>
+
+                <p className="title">Serviços</p>
+                <Link to="/servicos/configuracoes" className="link">
+                    <SettingsOutlinedIcon className="icon" />
+                    <li>Configurações</li>
                 </Link>
 
                 <p className="title">Usuário</p>

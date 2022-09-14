@@ -7,6 +7,7 @@ import Products from './pages/products/Products';
 import Orders from './pages/orders/Orders';
 import Profile from './pages/profile/Profile';
 import Login from './pages/login/Login';
+import Settings from './pages/settings/Settings';
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
 
             <Route path="usuario">
               <Route path="perfil" index element={<Profile />} />
+            </Route>
+
+            <Route path="servicos">
+              <Route path="configuracoes" index element={<Settings />} />
             </Route>
 
             <Route path="login" element={<Login />} />
