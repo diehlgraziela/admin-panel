@@ -2,10 +2,15 @@
 
 .card {
     @include v.display-flex(center, 0, 10px);
-    flex-direction: column;
     background: v.$background-white;
     box-shadow: v.$box-shadow;
     padding: 1rem;
+
+    .card-content {
+        @include v.display-flex(0, 0, 0);
+        flex-direction: column;
+        justify-content: space-around;
+    }
 
     .title {
         color: v.$title-color;
@@ -23,5 +28,9 @@
             color: #75baff;
             letter-spacing: 1px;
         }
+    }
+
+    img {
+        width: 40px;
     }
 }
