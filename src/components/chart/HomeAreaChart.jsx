@@ -9,11 +9,11 @@ const data = [
     },
     {
         name: 'Fevereiro',
-        Rendimento: 129,
+        Rendimento: 106,
     },
     {
         name: 'Março',
-        Rendimento: 145,
+        Rendimento: 121,
     },
     {
         name: 'Abril',
@@ -31,8 +31,11 @@ const data = [
 
 const HomeAreaChart = () => {
     return (
-        <div className="chart">
-            <h3>Receita dos últimos 6 meses</h3>
+        <div className="area-chart chart">
+            <div className="chart-header">
+                <h3 className="chart-title">Receita dos últimos 6 meses</h3>
+            </div>
+
             <ResponsiveContainer width="100%" aspect={2 / 1}>
                 <AreaChart
                     width={500}

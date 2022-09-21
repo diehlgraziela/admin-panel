@@ -15,7 +15,7 @@ const Login = () => {
         //autenticação simples (não é o jeito certo de fazer)
         console.log({ user, password })
         if (user === "admin" && password === "admin") {
-            navigate('/listas/usuarios');
+            navigate('/');
         } else {
             alert("Usuário ou senha incorretos");
         }

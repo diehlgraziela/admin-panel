@@ -5,6 +5,7 @@ import Content from '../../components/container/Content';
 import Sidebar from '../../components/sidebar/Sidebar';
 import Navbar from '../../components/navbar/Navbar';
 import Card from '../../components/card/Card';
+import ProgressBar from '../../components/chart/ProgressBar';
 import HomeAreaChart from '../../components/chart/HomeAreaChart';
 
 import './home.scss';
@@ -17,7 +18,7 @@ const Home = () => {
             <PageContainer>
                 <Navbar />
 
-                <Content class="home-content">
+                <Content>
                     <div className="cards">
                         <Card title="Visitantes diários" number="5" percentage="🡡 +2%" percentage_color="green" img={require('../../images/users.png')} />
                         <Card title="Pedidos" number="20" percentage="🡣 -4%" img={require('../../images/cart.png')} />
@@ -25,7 +26,11 @@ const Home = () => {
                         <Card title="Ganhos" number="R$349,50" percentage="🡣 -4%" img={require('../../images/coin.png')} />
                     </div>
 
-                    <HomeAreaChart />
+                    <div className="charts">
+                        <ProgressBar />
+                        <HomeAreaChart />
+                    </div>
+
                 </Content>
             </PageContainer>
         </Container>

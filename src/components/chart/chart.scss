@@ -1,8 +1,38 @@
 @use '../variables.scss' as v;
 
 .chart {
-    width: 100%;
     background: v.$background-white;
     box-shadow: v.$box-shadow;
+}
+
+.chart-content {
     padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-bar {
+    flex: 2;
+}
+
+.area-chart {
+    flex: 4;
+}
+
+.chart-title {
+    border-bottom: 1px solid v.$border-color;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.circular-progress-bar {
+    width: 50%;
+}
+
+.number {
+    font-size: 1.5rem;
+    font-weight: 600;
 }
