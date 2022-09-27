@@ -1,0 +1,25 @@
+@use '../variables.scss' as v;
+
+.button {
+    max-width: 200px;
+    text-decoration: none;
+}
+
+.button button {
+    @include v.display-flex(center, center, 0);
+    background: v.$main-color;
+    color: v.$background-white;
+    box-shadow: v.$box-shadow;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    transition: v.$hover-transition;
+}
+
+.button button:hover {
+    background: #3161bb;
+    ;
+}

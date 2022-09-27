@@ -5,12 +5,13 @@ import Content from '../../components/container/Content';
 import Sidebar from '../../components/sidebar/Sidebar';
 import Navbar from '../../components/navbar/Navbar';
 import UserTable from '../../components/table/UserTable';
+import Button from '../../components/button/Button';
 
 import './users.scss';
 
 const Users = () => {
     return (
-        <Container>
+        <Container className="users">
             <Sidebar />
 
             <PageContainer>
@@ -19,6 +20,7 @@ const Users = () => {
                 <Content>
                     <h1>Usuários</h1>
 
+                    <Button buttonText="Adicionar Usuários" />
                     <UserTable />
 
                 </Content>

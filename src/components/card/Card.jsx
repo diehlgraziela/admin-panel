@@ -10,7 +10,7 @@ const Card = ({ title, number, percentage, percentage_color, img }) => {
                     <span style={{ color: percentage_color === "green" ? "#43c91e" : "#e94545" }}> {percentage} </span> desde o último mês</p>
             </div>
             <div className="card-image">
-                <img src={img} />
+                <img src={img} alt="" />
             </div>
         </div>
     );
